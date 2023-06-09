@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Online Hash Generator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/220px-Repl.it_logo.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <main>
+        <h1>Hash Generator</h1>
+        <div id="input-form">
+            <label for="input-text">Enter text:</label>
+            <input type="text" id="input-text">
+            <label for="hash-algorithm">Select hashing algorithm:</label>
+            <select id="hash-algorithm">
+                <option value="sha1">SHA-1</option>
+                <option value="md5">MD5</option>
+                <option value="md2">MD2</option>
+                <option value="sha256">SHA-256</option>
+                <option value="sha512">SHA-512</option>
+            </select>
+            <button onclick="generateHash()">Generate Hash</button>
+            <button onclick="clearHash()">Clear</button>
+        </div>
+        <div id="output">
+            <label for="hash-result">Hash Result:</label>
+            <textarea id="hash-result" readonly></textarea>
+        </div>
+    </main>
+    <footer>
+        <div class="bottom-footer">
+            <div class="copyright">
+              <p class="text">
+                Copyright&copy;2023|
+                <span class="split-text" data-text="FORUM"><a
+                  href="https://github.com/victorpreston" >Xpert</a></span>
+               
+              </p>
+            </div>
+              <div class="back-btn-wrap">
+                <a href="#" class="back-btn">
+                  <i class="fas fa-chevron-up"></i>
+                </a>
+              </div>
+            </div>
+    </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

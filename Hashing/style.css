@@ -1,0 +1,152 @@
+:root{
+	--main-background: #0b0c0f;
+	--main-fonts-color: #fff;
+	--main-decor-color:#00a9e2;
+    --main-header-background:#21252e;
+	--main-font-family: 'Poppins', sans-serif;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
+nav {
+    text-align:right;
+    padding: 10px 0;
+    width: 100%;
+    
+}
+  
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+  
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+  
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+  
+h1 {
+    color: #333;
+    align-items:center;
+    justify-content: space-evenly;
+    display: flex;
+}
+  
+#input-form {
+    margin-bottom: 20px;
+    
+}
+  
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+  
+input[type="text"] {
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+  
+select {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+  
+button {
+    padding: 5px 10px;
+}
+  
+#output {
+    padding: 10px;
+    background-color: #f7f7f7;
+}
+  
+textarea {
+    width: 300px;
+    height: 100px;
+    resize: vertical;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+  
+.hash-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+  
+.hash-input {
+    margin-bottom: 10px;
+}
+  
+.hash-output {
+    margin-bottom: 10px;
+}
+  
+.hash-buttons {
+    display: flex;
+    justify-content: center;
+}
+  
+.hash-button {
+    margin-right: 10px;
+}
+main{
+    position:relative;
+    justify-content: space-around;
+}
+.bottom-footer {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 1.5rem 0 0 0;
+    margin-top: 2.5rem;
+    position: relative;
+}
+
+.bottom-footer:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    max-width: 500px;
+    height: 1px;
+    background-color: #7b7b7b;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
